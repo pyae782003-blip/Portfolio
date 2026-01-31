@@ -137,7 +137,7 @@ export const CTABanner = () => {
                             href="https://www.facebook.com/share/17mA1J8m3J/?mibextid=wwXIfr"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-8 py-4 bg-red-600 text-white font-semibold rounded-full hover:bg-red-500 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-600/30 group"
+                            className="inline-flex items-center gap-2 px-8 py-4 bg-pink-600 text-white font-semibold rounded-full hover:bg-pink-500 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-pink-600/30 group"
                             style={{ opacity: 0 }}
                         >
                             <span>Go to Portfolio</span>

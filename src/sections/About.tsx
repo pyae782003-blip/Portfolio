@@ -192,7 +192,7 @@ export const About = () => {
               />
               {/* Decorative frame */}
               <div className="absolute inset-0 border border-white/10" />
-              <div className="absolute -bottom-4 -right-4 w-full h-full border border-red-500/30 -z-10" />
+              <div className="absolute -bottom-4 -right-4 w-full h-full border border-pink-500/30 -z-10" />
             </div>
           </div>
 
@@ -224,7 +224,7 @@ export const About = () => {
             </div>
 
             {/* CTA Button */}
-            <button className="about-para mt-8 group inline-flex items-center gap-3 px-6 py-3 bg-red-600 text-white hover:bg-red-700 transition-all duration-300 hover:scale-105 opacity-0">
+            <button className="about-para mt-8 group inline-flex items-center gap-3 px-6 py-3 bg-pink-600 text-white hover:bg-pink-700 transition-all duration-300 hover:scale-105 opacity-0">
               <Download className="w-5 h-5" />
               <span className="text-sm tracking-wider uppercase">Download Resume</span>
             </button>
@@ -245,7 +245,7 @@ export const About = () => {
             >
               <div className="text-4xl md:text-5xl font-bold font-['Montserrat'] text-white mb-2">
                 {counters[index]}
-                <span className="text-red-500">{stat.suffix}</span>
+                <span className="text-pink-500">{stat.suffix}</span>
               </div>
               <div className="text-sm text-gray-500 tracking-wider uppercase">
                 {stat.label}

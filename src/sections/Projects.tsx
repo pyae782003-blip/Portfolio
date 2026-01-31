@@ -195,7 +195,7 @@ export const Projects = () => {
               <div
                 key={project.id}
                 onClick={() => setSelectedProject(project)}
-                className="project-card group relative overflow-hidden rounded-2xl bg-[#0a0a0a] border border-white/5 opacity-0 transition-all duration-500 hover:border-red-500/30 hover:-translate-y-2 cursor-pointer"
+                className="project-card group relative overflow-hidden rounded-2xl bg-[#0a0a0a] border border-white/5 opacity-0 transition-all duration-500 hover:border-pink-500/30 hover:-translate-y-2 cursor-pointer"
                 style={{ transformStyle: 'preserve-3d' }}
               >
                 {/* Thumbnail */}
@@ -210,7 +210,7 @@ export const Projects = () => {
 
                   {/* Play button */}
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 md:w-20 md:h-20 bg-red-600 rounded-full flex items-center justify-center transform scale-75 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 hover:bg-red-500 hover:scale-110">
+                    <div className="w-16 h-16 md:w-20 md:h-20 bg-pink-600 rounded-full flex items-center justify-center transform scale-75 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 hover:bg-pink-500 hover:scale-110">
                       <Play className="w-8 h-8 text-white ml-1" fill="white" />
                     </div>
                   </div>
@@ -225,7 +225,7 @@ export const Projects = () => {
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-lg md:text-xl font-bold font-['Montserrat'] text-white mb-2 group-hover:text-red-500 transition-colors duration-300">
+                  <h3 className="text-lg md:text-xl font-bold font-['Montserrat'] text-white mb-2 group-hover:text-pink-500 transition-colors duration-300">
                     {project.title}
                   </h3>
                   <p className="text-gray-500 text-sm">
@@ -235,7 +235,7 @@ export const Projects = () => {
 
                 {/* Hover glow effect */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                  <div className="absolute inset-0 bg-gradient-to-t from-red-500/10 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-pink-500/10 to-transparent" />
                 </div>
               </div>
             ))}
@@ -261,7 +261,7 @@ export const Projects = () => {
             {/* Close button */}
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/10 hover:bg-red-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+              className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/10 hover:bg-pink-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
             >
               <X className="w-5 h-5 text-white" />
             </button>
@@ -310,7 +310,7 @@ export const Projects = () => {
             {/* Video Info */}
             <div className="p-6">
               <div className="flex items-center gap-3 mb-2">
-                <span className="px-3 py-1 text-xs bg-red-600/20 text-red-500 rounded-full border border-red-500/30">
+                <span className="px-3 py-1 text-xs bg-pink-600/20 text-pink-500 rounded-full border border-pink-500/30">
                   {selectedProject.category}
                 </span>
               </div>

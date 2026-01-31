@@ -252,7 +252,7 @@ export const Contact = () => {
                   key={index}
                   className="info-item flex items-center gap-4 opacity-0"
                 >
-                  <div className="w-12 h-12 flex items-center justify-center bg-white/5 rounded-lg text-red-500">
+                  <div className="w-12 h-12 flex items-center justify-center bg-white/5 rounded-lg text-pink-500">
                     {item.icon}
                   </div>
                   <div>
@@ -271,7 +271,7 @@ export const Contact = () => {
                   <a
                     key={index}
                     href={social.href}
-                    className="social-icon w-12 h-12 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:text-white hover:bg-red-600 transition-all duration-300 hover:scale-110 hover:rotate-6 opacity-0"
+                    className="social-icon w-12 h-12 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:text-white hover:bg-pink-600 transition-all duration-300 hover:scale-110 hover:rotate-6 opacity-0"
                     aria-label={social.label}
                   >
                     {social.icon}
@@ -292,7 +292,7 @@ export const Contact = () => {
               <div className="form-field relative opacity-0">
                 <label
                   className={`absolute left-4 transition-all duration-300 pointer-events-none ${focusedField === 'name' || formState.name
-                    ? '-top-2.5 text-xs text-red-500 bg-black px-2'
+                    ? '-top-2.5 text-xs text-pink-500 bg-black px-2'
                     : 'top-4 text-gray-500'
                     }`}
                 >
@@ -305,7 +305,7 @@ export const Contact = () => {
                   onChange={handleChange}
                   onFocus={() => setFocusedField('name')}
                   onBlur={() => setFocusedField(null)}
-                  className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-lg text-white focus:border-red-500 focus:outline-none transition-all duration-300 focus:shadow-[0_0_20px_rgba(255,0,0,0.2)]"
+                  className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-lg text-white focus:border-pink-500 focus:outline-none transition-all duration-300 focus:shadow-[0_0_20px_rgba(236,72,153,0.2)]"
                   required
                 />
               </div>
@@ -314,7 +314,7 @@ export const Contact = () => {
               <div className="form-field relative opacity-0">
                 <label
                   className={`absolute left-4 transition-all duration-300 pointer-events-none ${focusedField === 'email' || formState.email
-                    ? '-top-2.5 text-xs text-red-500 bg-black px-2'
+                    ? '-top-2.5 text-xs text-pink-500 bg-black px-2'
                     : 'top-4 text-gray-500'
                     }`}
                 >
@@ -327,7 +327,7 @@ export const Contact = () => {
                   onChange={handleChange}
                   onFocus={() => setFocusedField('email')}
                   onBlur={() => setFocusedField(null)}
-                  className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-lg text-white focus:border-red-500 focus:outline-none transition-all duration-300 focus:shadow-[0_0_20px_rgba(255,0,0,0.2)]"
+                  className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-lg text-white focus:border-pink-500 focus:outline-none transition-all duration-300 focus:shadow-[0_0_20px_rgba(236,72,153,0.2)]"
                   required
                 />
               </div>
@@ -337,7 +337,7 @@ export const Contact = () => {
             <div className="form-field relative opacity-0">
               <label
                 className={`absolute left-4 transition-all duration-300 pointer-events-none ${focusedField === 'subject' || formState.subject
-                  ? '-top-2.5 text-xs text-red-500 bg-black px-2'
+                  ? '-top-2.5 text-xs text-pink-500 bg-black px-2'
                   : 'top-4 text-gray-500'
                   }`}
               >
@@ -350,7 +350,7 @@ export const Contact = () => {
                 onChange={handleChange}
                 onFocus={() => setFocusedField('subject')}
                 onBlur={() => setFocusedField(null)}
-                className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-lg text-white focus:border-red-500 focus:outline-none transition-all duration-300 focus:shadow-[0_0_20px_rgba(255,0,0,0.2)]"
+                className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-lg text-white focus:border-pink-500 focus:outline-none transition-all duration-300 focus:shadow-[0_0_20px_rgba(236,72,153,0.2)]"
                 required
               />
             </div>
@@ -359,7 +359,7 @@ export const Contact = () => {
             <div className="form-field relative opacity-0">
               <label
                 className={`absolute left-4 transition-all duration-300 pointer-events-none ${focusedField === 'message' || formState.message
-                  ? '-top-2.5 text-xs text-red-500 bg-black px-2'
+                  ? '-top-2.5 text-xs text-pink-500 bg-black px-2'
                   : 'top-4 text-gray-500'
                   }`}
               >
@@ -372,7 +372,7 @@ export const Contact = () => {
                 onFocus={() => setFocusedField('message')}
                 onBlur={() => setFocusedField(null)}
                 rows={5}
-                className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-lg text-white focus:border-red-500 focus:outline-none transition-all duration-300 focus:shadow-[0_0_20px_rgba(255,0,0,0.2)] resize-none"
+                className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-lg text-white focus:border-pink-500 focus:outline-none transition-all duration-300 focus:shadow-[0_0_20px_rgba(236,72,153,0.2)] resize-none"
                 required
               />
             </div>
@@ -381,7 +381,7 @@ export const Contact = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="submit-btn group w-full md:w-auto px-8 py-4 bg-red-600 text-white font-medium rounded-lg flex items-center justify-center gap-3 hover:bg-red-700 transition-all duration-300 hover:scale-105 opacity-0 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+              className="submit-btn group w-full md:w-auto px-8 py-4 bg-pink-600 text-white font-medium rounded-lg flex items-center justify-center gap-3 hover:bg-pink-700 transition-all duration-300 hover:scale-105 opacity-0 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
             >
               <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
               <Send className="w-5 h-5 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
@@ -392,14 +392,14 @@ export const Contact = () => {
               <p className="text-green-500 text-sm mt-2">Message sent successfully!</p>
             )}
             {submitStatus === 'error' && (
-              <p className="text-red-400 text-sm mt-2">Failed to send message. Please try again.</p>
+              <p className="text-pink-400 text-sm mt-2">Failed to send message. Please try again.</p>
             )}
           </form>
         </div>
       </div>
 
       {/* Background gradient */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-px bg-gradient-to-r from-transparent via-red-500/30 to-transparent" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-px bg-gradient-to-r from-transparent via-pink-500/30 to-transparent" />
     </section>
   );
 };

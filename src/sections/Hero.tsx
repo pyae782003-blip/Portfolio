@@ -114,7 +114,7 @@ export const Hero = () => {
       <div
         className="absolute inset-0 opacity-30 z-0"
         style={{
-          background: 'radial-gradient(ellipse at 20% 30%, rgba(255,0,0,0.15) 0%, transparent 50%), radial-gradient(ellipse at 80% 70%, rgba(100,0,0,0.1) 0%, transparent 50%)',
+          background: 'radial-gradient(ellipse at 20% 30%, rgba(236,72,153,0.15) 0%, transparent 50%), radial-gradient(ellipse at 80% 70%, rgba(100,0,0,0.1) 0%, transparent 50%)',
         }}
       />
 
@@ -123,7 +123,7 @@ export const Hero = () => {
         <div ref={titleRef} className="mb-8" style={{ perspective: '1000px' }}>
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold font-['Montserrat'] leading-tight">
             <span className="title-line block text-white opacity-0">PYAE PHYO</span>
-            <span className="title-line block text-red-500 opacity-0">KYAW</span>
+            <span className="title-line block text-pink-500 opacity-0">KYAW</span>
             <span className="title-line block text-white opacity-0">AI CREATOR</span>
           </h1>
         </div>
@@ -142,12 +142,12 @@ export const Hero = () => {
         <button
           ref={ctaRef}
           onClick={scrollToProjects}
-          className="group relative px-8 py-4 bg-transparent border border-white/30 text-white text-sm tracking-wider uppercase overflow-hidden transition-all duration-300 hover:border-red-500 hover:scale-105 opacity-0"
+          className="group relative px-8 py-4 bg-transparent border border-white/30 text-white text-sm tracking-wider uppercase overflow-hidden transition-all duration-300 hover:border-pink-500 hover:scale-105 opacity-0"
         >
           <span className="relative z-10 group-hover:text-white transition-colors duration-300">
             View My Work
           </span>
-          <span className="absolute inset-0 bg-red-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
+          <span className="absolute inset-0 bg-pink-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
         </button>
       </div>
 
@@ -162,7 +162,7 @@ export const Hero = () => {
 
       {/* Decorative elements */}
       <div className="absolute top-1/4 left-10 w-px h-32 bg-gradient-to-b from-transparent via-white/20 to-transparent" />
-      <div className="absolute bottom-1/4 right-10 w-px h-32 bg-gradient-to-b from-transparent via-red-500/30 to-transparent" />
+      <div className="absolute bottom-1/4 right-10 w-px h-32 bg-gradient-to-b from-transparent via-pink-500/30 to-transparent" />
     </section>
   );
 };

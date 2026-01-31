@@ -61,7 +61,7 @@ export const Navigation = () => {
                 className="relative text-sm text-gray-400 hover:text-white transition-colors duration-300 group"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-red-500 transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-pink-500 transition-all duration-300 group-hover:w-full" />
               </button>
             ))}
             {/* Certificates Button */}
@@ -71,14 +71,14 @@ export const Navigation = () => {
             >
               <Award className="w-4 h-4" />
               Certificates
-              <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-red-500 transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-pink-500 transition-all duration-300 group-hover:w-full" />
             </button>
           </div>
 
           {/* CTA Button */}
           <button
             onClick={() => scrollToSection('#contact')}
-            className="hidden md:block px-5 py-2 border border-white/30 text-sm text-white hover:bg-red-600 hover:border-red-600 transition-all duration-300 hover:scale-105"
+            className="hidden md:block px-5 py-2 border border-white/30 text-sm text-white hover:bg-pink-600 hover:border-pink-600 transition-all duration-300 hover:scale-105"
           >
             Let's Talk
           </button>
@@ -103,7 +103,7 @@ export const Navigation = () => {
             <button
               key={link.name}
               onClick={() => scrollToSection(link.href)}
-              className="text-2xl text-white hover:text-red-500 transition-colors duration-300"
+              className="text-2xl text-white hover:text-pink-500 transition-colors duration-300"
               style={{
                 opacity: isMobileMenuOpen ? 1 : 0,
                 transform: isMobileMenuOpen ? 'translateY(0)' : 'translateY(20px)',
@@ -119,7 +119,7 @@ export const Navigation = () => {
               setIsMobileMenuOpen(false);
               setIsCertModalOpen(true);
             }}
-            className="text-2xl text-white hover:text-red-500 transition-colors duration-300 flex items-center gap-2"
+            className="text-2xl text-white hover:text-pink-500 transition-colors duration-300 flex items-center gap-2"
             style={{
               opacity: isMobileMenuOpen ? 1 : 0,
               transform: isMobileMenuOpen ? 'translateY(0)' : 'translateY(20px)',
@@ -131,7 +131,7 @@ export const Navigation = () => {
           </button>
           <button
             onClick={() => scrollToSection('#contact')}
-            className="mt-4 px-8 py-3 bg-red-600 text-white text-lg transition-all duration-300"
+            className="mt-4 px-8 py-3 bg-pink-600 text-white text-lg transition-all duration-300"
             style={{
               opacity: isMobileMenuOpen ? 1 : 0,
               transform: isMobileMenuOpen ? 'translateY(0)' : 'translateY(20px)',

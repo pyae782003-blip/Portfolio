@@ -158,7 +158,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto mb-16">
         <div
           ref={lineRef}
-          className="h-px bg-gradient-to-r from-transparent via-red-500/50 to-transparent"
+          className="h-px bg-gradient-to-r from-transparent via-pink-500/50 to-transparent"
           style={{ width: '0%' }}
         />
       </div>
@@ -195,7 +195,7 @@ export const Footer = () => {
                     className="link-column text-gray-400 hover:text-white transition-colors duration-300 relative group opacity-0"
                   >
                     {link.name}
-                    <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-red-500 transition-all duration-300 group-hover:w-full" />
+                    <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-pink-500 transition-all duration-300 group-hover:w-full" />
                   </button>
                 </li>
               ))}
@@ -212,7 +212,7 @@ export const Footer = () => {
                 <a
                   key={index}
                   href={social.href}
-                  className="footer-social w-10 h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:text-white hover:bg-red-600 transition-all duration-300 hover:scale-110 opacity-0"
+                  className="footer-social w-10 h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:text-white hover:bg-pink-600 transition-all duration-300 hover:scale-110 opacity-0"
                   aria-label={social.label}
                 >
                   {social.icon}
@@ -234,7 +234,7 @@ export const Footer = () => {
             className="group flex items-center gap-2 text-gray-500 hover:text-white transition-colors duration-300"
           >
             <span className="text-sm">Back to top</span>
-            <div className="w-8 h-8 flex items-center justify-center bg-white/5 rounded-full group-hover:bg-red-600 transition-all duration-300">
+            <div className="w-8 h-8 flex items-center justify-center bg-white/5 rounded-full group-hover:bg-pink-600 transition-all duration-300">
               <ArrowUp className="w-4 h-4 animate-bounce-subtle" />
             </div>
           </button>

@@ -227,7 +227,7 @@ export const Education = () => {
                 {[...Array(6)].map((_, i) => (
                     <div
                         key={i}
-                        className="edu-particle absolute w-2 h-2 rounded-full bg-red-500/20"
+                        className="edu-particle absolute w-2 h-2 rounded-full bg-pink-500/20"
                         style={{
                             left: `${Math.random() * 100}%`,
                             top: `${Math.random() * 100}%`,
@@ -239,7 +239,7 @@ export const Education = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div ref={headingRef} className="text-center mb-20">
-                    <p className="text-red-500 text-sm tracking-[0.3em] uppercase mb-4 opacity-80">
+                    <p className="text-pink-500 text-sm tracking-[0.3em] uppercase mb-4 opacity-80">
                         My Journey
                     </p>
                     <h2
@@ -256,7 +256,7 @@ export const Education = () => {
                             </span>
                         ))}
                     </h2>
-                    <div className="mt-6 w-24 h-1 bg-gradient-to-r from-red-500 to-orange-500 mx-auto rounded-full" />
+                    <div className="mt-6 w-24 h-1 bg-gradient-to-r from-pink-500 to-orange-500 mx-auto rounded-full" />
                 </div>
 
                 {/* Timeline */}
@@ -264,12 +264,12 @@ export const Education = () => {
                     {/* Central Line */}
                     <div
                         ref={lineRef}
-                        className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-500 via-orange-500 to-yellow-500 transform -translate-x-1/2 hidden md:block"
+                        className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-pink-500 via-orange-500 to-yellow-500 transform -translate-x-1/2 hidden md:block"
                         style={{ transformOrigin: 'top center' }}
                     />
 
                     {/* Mobile Line */}
-                    <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-500 via-orange-500 to-yellow-500 md:hidden" />
+                    <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-pink-500 via-orange-500 to-yellow-500 md:hidden" />
 
                     {/* Timeline Items */}
                     <div className="space-y-12 md:space-y-16">
