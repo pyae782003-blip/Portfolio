@@ -380,11 +380,20 @@ export const Contact = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="submit-btn group w-full md:w-auto px-8 py-4 bg-red-600 text-white font-medium rounded-lg flex items-center justify-center gap-3 hover:bg-red-700 transition-all duration-300 hover:scale-105 opacity-0"
+              disabled={isSubmitting}
+              className="submit-btn group w-full md:w-auto px-8 py-4 bg-red-600 text-white font-medium rounded-lg flex items-center justify-center gap-3 hover:bg-red-700 transition-all duration-300 hover:scale-105 opacity-0 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
             >
-              <span>Send Message</span>
+              <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
               <Send className="w-5 h-5 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
             </button>
+
+            {/* Status Messages */}
+            {submitStatus === 'success' && (
+              <p className="text-green-500 text-sm mt-2">Message sent successfully!</p>
+            )}
+            {submitStatus === 'error' && (
+              <p className="text-red-400 text-sm mt-2">Failed to send message. Please try again.</p>
+            )}
           </form>
         </div>
       </div>
